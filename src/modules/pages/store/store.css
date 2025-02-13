@@ -1,0 +1,196 @@
+.container {
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Description-Tienda {
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(to right, #116af084, #215ed87f, #264fc17d, #2744aba0, #26379572);
+}
+
+.card_store {
+  position: relative;
+  margin: 20px 0;
+  width: 200px;
+  height: 350px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card_store:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(-15deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card_store .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.card_store .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_store:hover .img-container {
+  transform: rotateY(-135deg);
+}
+
+.card_store .card-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000;
+}
+
+.card_store .card-details h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #1c1c1d;
+}
+
+.card_store .card-details p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  font-size: 1em;
+}
+.buton-compra {
+  background-color: #28a745;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+/* //////////////////// */
+.modal-overlay,
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content,
+.message-content {
+  background: rgba(29, 28, 28, 0.637);
+  font-size: 1rem;
+  color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-buttons {
+  margin-top: 15px;
+}
+
+.confirm-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-content button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.error-overlay {
+  position: fixed; /* Para posicionarlo fijo en la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que esté encima de todo */
+}
+
+.outofstock {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: #e4d8d8;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+/*estilos para los precios*/
+.before-price {
+  color: red;
+  margin-bottom: 0; /* Reduce el espacio debajo */
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.now-price {
+  color: #05bc30;
+  font-weight: bold;
+  margin-top: 0; /* Reduce el espacio encima */
+  font-size: 1.1rem;
+}

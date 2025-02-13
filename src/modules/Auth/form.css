@@ -1,0 +1,120 @@
+/* LoginPage.css */
+
+/* Fondo degradado */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor del formulario */
+.login-form-container {
+  width: 100%;
+  max-width: 500px; /* Aumentar el máximo ancho para pantallas más grandes */
+  background-color: rgba(80, 90, 91, 0.395);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Título del formulario */
+.login-form-title {
+  font-size: 1.75rem; /* Aumenta el tamaño de la fuente para pantallas grandes */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los campos de entrada */
+.input-field {
+  width: 90%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.input-field:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+.input-field::placeholder{
+  color: rgb(0, 221, 255);
+}
+
+/* Estilo del botón de submit */
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.25rem; /* Aumentar el tamaño del botón */
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+.submit-button:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Enlace de registro */
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.125rem; /* Aumentar el tamaño del texto */
+}
+
+.register-link a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  color: #2563eb;
+}
+
+/* Estilo de los mensajes de error */
+.error-message {
+  color: #f87171;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+
+/* Responsividad: Adaptación a pantallas pequeñas */
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 1.5rem;
+    max-width: 280px;
+   
+  }
+
+  .login-form-title {
+    font-size: 1.25rem;
+  }
+
+  .input-field {
+    padding: 10px;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

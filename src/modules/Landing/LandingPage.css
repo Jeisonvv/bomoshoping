@@ -1,0 +1,155 @@
+
+/* Estilos básicos generales */
+.landing-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: aliceblue;
+  }
+  
+  .landing-title {
+    font-size: 2rem; /* Reducido para pantallas pequeñas */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-description,
+  .landing-subtitle {
+    font-size: 1rem; /* Reducido para pantallas pequeñas */
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .landing-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los productos destacados */
+  .featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 100%;
+    max-width: 300px; /* Haciendo las cartas más pequeñas */
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    color: #007bff;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .title-prodtc-card{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ddd;
+    font-family:'Times New Roman', Times, serif
+  }
+  .product-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px; /* Reducción de la altura de la imagen */
+    object-fit: cover;
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .landing-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .landing-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .landing-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query para pantallas pequeñas (móviles) */
+  @media (max-width: 768px) {
+    .landing-title {
+      font-size: 1.8rem; /* Ajustado tamaño de texto */
+    }
+  
+    .landing-description,
+    .landing-subtitle {
+      font-size: 1rem;
+    }
+  
+    .landing-list li {
+      font-size: 0.9rem;
+    }
+  
+    .featured-products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  
+    .product-card {
+      max-width: none;
+      width: 100%;
+    }
+  
+    .landing-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .landing-link {
+      margin-bottom: 10px;
+    }  
+  }
+  
+  /* Media query para pantallas extra pequeñas (dispositivos móviles muy pequeños) */
+  @media (max-width: 480px) {
+    .landing-title {
+      font-size: 1.5rem; /* Ajustado para pantallas muy pequeñas */
+    }
+  
+    .landing-description,
+    .landing-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .landing-list li {
+      font-size: 0.8rem;
+    }
+  
+    .featured-products {
+      display: block;
+    }
+  
+    .product-card {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  

@@ -1,0 +1,187 @@
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container-report{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .report-btn{
+    width: 50%;
+  }
+  
+  /* Título principal */
+  .title_user-app {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fdfcfc;
+  }
+  
+  /* Estilos para los filtros */
+  .Container_filter{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .filter input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para la tarjeta de usuario */
+  .user-card {
+    background-color: #ffffff48;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-card p {
+    margin: 0 0 10px 0;
+  }
+  
+  /* Campos de entrada de usuario */
+  .user-fields .input {
+    width: calc(50% - 12px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Botones */
+  .toggle-btn, .save-btn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .toggle-btn:hover, .save-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para las compras */
+  .contec_purchase{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .user-purchases {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #3812df;
+    
+  }
+  
+  .user-purchases h3 {
+    font-size: 1.2rm;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  
+  .purchase-item {
+    max-width: 200px;
+    border: 1px solid #3812df;
+    background-color: #33333367;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+  
+  .purchase-image {
+    width: 100px;
+    height: 100px;
+    margin: 20%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 10px;
+  }
+  
+  .purchase-item label {
+    display: inline-block;
+    width: 80px;
+  }
+  
+  .purchase-item select {
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .purchase-item p {
+    margin: 5px 0;
+  }
+  
+  
+  
+  /* Mensaje de éxito */
+  .success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 10000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos para el loader */
+  .loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
