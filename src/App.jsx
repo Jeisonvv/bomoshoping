@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
-          <Route path="qr" element={<Qr/>} />
+          <Route path="/qr" element={<Qr/>} />
 
 
           {/* Ruta protegida para /store */}
