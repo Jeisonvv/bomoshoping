@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/qr" element={<Qr/>} />
+          
 
 
           {/* Ruta protegida para /store */}
@@ -48,10 +48,11 @@ const App = () => {
             <Route path='/usersapp' element={<Users/>}/>
           </Route>
 
-          {/*rutas para los trabajadores*/ }
+          {/*rutas para los administradores*/ }
           <Route element={<ProtectedRoute allowedRoles={['administrador']} />}>
             <Route path='/create-products' element={<CreateProductForm/>}/>
             <Route path='/products' element={<Products/>}/>
+            <Route path="/qr" element={<Qr/>} />
           </Route>
           
         </Routes>

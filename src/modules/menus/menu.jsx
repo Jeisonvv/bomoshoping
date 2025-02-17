@@ -41,6 +41,7 @@ const Navbar = () => {
     PRODUCTS: "/products",
     USERS: "/usersapp",
     PROFILE: "/profile",
+    QR:"/qr"
   };
 
   return (
@@ -111,9 +112,15 @@ const Navbar = () => {
 
         {user &&
           user.role === roles.ADMINISTRADOR && ( // Opciones exclusivas para usuarios con el rol de "administrador".
+            <>
             <Link onClick={closeMenu} to={routes.USERS} className="nav_items_a">
               <p>Usuarios</p>
             </Link>
+            <Link onClick={closeMenu} to={routes.QR} className="nav_items_a">
+              <p>escanea qr</p>
+            </Link>
+            </>
+            
           )}
 
         {user && ( // Enlace para cerrar sesión, visible solo si hay un usuario autenticado.
