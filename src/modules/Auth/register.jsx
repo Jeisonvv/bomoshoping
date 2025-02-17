@@ -49,7 +49,8 @@ const Register = () => {
       });
 
       if (response.ok) {
-        const loginResponse = await fetch('https://backbomoshoping.onrender.com/login', {
+        const url = import.meta.env.VITE_BACKEND_URL
+        const loginResponse = await fetch(`${url}/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
