@@ -116,9 +116,6 @@ const Navbar = () => {
             <Link onClick={closeMenu} to={routes.USERS} className="nav_items_a">
               <p>Usuarios</p>
             </Link>
-            <Link onClick={closeMenu} to={routes.QR} className="nav_items_a">
-              <p>escanea qr</p>
-            </Link>
             </>
             
           )}
