@@ -19,8 +19,8 @@
 .card_store {
   position: relative;
   margin: 20px 0;
-  width: 200px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
   background: #fff;
   transform-style: preserve-3d;
   transform: perspective(2000px);
@@ -71,7 +71,7 @@
   margin: 0;
   padding: 0.5em 0;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1rem;
   color: #1c1c1d;
 }
 
@@ -81,7 +81,7 @@
   margin: 0;
   padding: 0;
   line-height: 20px;
-  font-size: 1em;
+  font-size: 0.8rem;
 }
 .buton-compra {
   background-color: #28a745;
