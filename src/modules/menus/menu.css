@@ -47,6 +47,7 @@
   text-align: center;
   background: rgb(131,58,180);
   background: linear-gradient(90deg, rgb(36, 3, 120) 0%, rgba(5, 12, 74) 50%, rgb(36, 3, 120) 100%);
+  z-index:999 ;
   transition: all .2s ease-in-out;
  
   @media (min-width: 768px){

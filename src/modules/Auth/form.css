@@ -46,10 +46,34 @@
   border-color: #3b82f6;
   outline: none;
 }
-.input-field::placeholder{
+.input-field::placeholder {
   color: rgb(0, 221, 255);
 }
 
+/*estilos para el codigo del pais*/
+.container-numPhone {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  
+}
+.react-tel-input {
+  margin-top: 32px;
+}
+.react-tel-input .country-list {
+  background-color: #6b7280 !important;
+}
+.form-control {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  width: 100px !important;
+  color: white !important;
+}
+.dial-code {
+  color: rgb(0, 221, 255) !important;
+}
+.highlight {
+  color: #2563eb !important;
+}
 /* Estilo del botón de submit */
 .submit-button {
   width: 100%;
@@ -96,13 +120,11 @@
   font-size: 1rem;
 }
 
-
 /* Responsividad: Adaptación a pantallas pequeñas */
 @media (max-width: 480px) {
   .login-form-container {
     padding: 1.5rem;
     max-width: 280px;
-   
   }
 
   .login-form-title {
@@ -116,5 +138,11 @@
   .submit-button {
     padding: 12px;
     font-size: 1rem;
+  }
+
+  .container-numPhone .input-field {
+    text-align: center;
+    width: 75%;
+    margin-left: 12px;
   }
 }
